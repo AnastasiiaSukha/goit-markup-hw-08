@@ -20,8 +20,8 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <!-- <body>
-    <header class="header">
+  <body>
+    <!-- <header class="header">
       <div class="container header__container">
         <nav class="header-navigation">
           <a class="link header__logo logo" href="./index.html"
@@ -63,14 +63,14 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
       <section class="hero">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button class="hero__button button" type="button" data-modal-open>
           Заказать услугу
         </button>
-      </section> -->
+      </section>
 
       <section class="our-quality">
         <div class="container">
@@ -127,49 +127,79 @@
           </ul>
         </div>
       </section>
-       <!-- <section class="our-work section">
+       <section class="our-work section">
         <div class="container">
           <h2 class="our-work__title">Чем мы занимаемся</h2>
           <ul class="list our-work__list">
             <li class="our-work__item">
+              <picture>
+                <source 
+                srcset="./images/job/ourjob1.jpg 1x,
+                         ./images/job/ourjob1-2x.jpg 2x" 
+                         media="(min-width: 1200px)">
               <img
                 src="./images/ourjob1.jpg"
                 alt="Написание кода"
-                width="370"
-                height="294"
               />
+              </picture>
               <p class="our-work__text">Десктопные приложения</p>
             </li>
             <li class="our-work__item">
+              <picture>
+                <source 
+                srcset="./images/job/ourjob2.jpg 1x,
+                        ./images/job/ourjob2-2x.jpg 2x" 
+                        media="(min-width: 1200px)">
               <img
                 src="./images/ourjob2.jpg"
                 alt="Выбор дизайна для отоброжения на мобильном"
-                width="370"
-                height="294"
               />
+              </picture>
               <p class="our-work__text">Мобильные приложения</p>
             </li>
             <li class="our-work__item">
+              <picture>
+                <source 
+                srcset="./images/job/ourjob3.jpg 1x,
+                         ./images/job/ourjob3-2x.jpg 2x" 
+                            media="(min-width: 1200px)">
               <img
                 src="./images/ourjob3.jpg"
                 alt="Палитра цветов на планшете"
-                width="370"
-                height="294"
-              />
+                />
+            </picture>
               <p class="our-work__text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
-              <img
-                src="./images/productd.jpg"
-                alt="фото Игоря Демьяненко"
-              />
+              <picture>
+               <source
+               srcset = "./images/team/productd.jpg 1x,
+                         ./images/team/productd-2x.jpg 2x
+               "
+               media="(min-width: 1200px)">
+              <source 
+              srcset="./images/team/productd-tab.jpg 1x,
+                      ./images/team/productd-tab-2x.jpg 2x"
+
+                       media="(min-width: 768px)">
+
+              <source 
+              srcset="./images/team/productd-mob.jpg 1x,
+                      ./images/team/productd-mob-2x.jpg 2x"
+
+                  media="(min-width: 320px)">
+              <img 
+              src="./images/productd.jpg" 
+              alt="фото Игоря Демьяненко" />
+              </picture>
+             
               <div class="team__under-text">
                 <h3 class="team__item-title">Игорь Демьяненко</h3>
                 <p class="team__item-paragraph" lang="en">Product Designer</p>
@@ -206,10 +236,25 @@
               </div>
             </li>
             <li class="team__item">
+              <picture>
+                <source 
+                srcset="./images/team/frontendd.jpg 1x,
+                        ./images/team/frontendd-2x.jpg 2x
+                             " media="(min-width: 1200px)">
+                <source 
+                srcset="./images/team/frontendd-tab.jpg 1x,
+                        ./images/team/frontendd-tab-2x.jpg 2x" 
+                            media="(min-width: 768px)">
+              
+                <source 
+                srcset="./images/team/frontendd-mob.jpg 1x,
+                        ./images/team/frontendd-mob-2x.jpg 2x"
+                             media="(min-width: 320px)">
               <img
                 src="./images/frontendd.jpg"
                 alt="фото Ольги Репиной"
               />
+              </picture>
               <div class="team__under-text">
                 <h3 class="team__item-title">Ольга Репина</h3>
                 <p class="team__item-paragraph" lang="en">Frontend Developer</p>
@@ -246,10 +291,25 @@
               </div>
             </li>
             <li class="team__item">
+        <picture>
+          <source 
+          srcset="./images/team/marketing.jpg 1x,
+                    ./images/team/marketing-2x.jpg 2x"
+                          media="(min-width: 1200px)">
+          <source 
+          srcset="./images/team/marketing-tab.jpg 1x,
+                   ./images/team/marketing-tab-2x.jpg 2x" 
+                        media="(min-width: 768px)">
+        
+          <source 
+          srcset="./images/team/marketing-mob.jpg 1x,
+                    ./images/team/marketing-mob-2x.jpg 2x" 
+                           media="(min-width: 320px)">
               <img
                 src="./images/marketing.jpg"
                 alt="фото Николая Тарасова"
               />
+              </picture>
               <div class="team__under-text">
                 <h3 class="team__item-title">Николай Тарасов</h3>
                 <p class="team__item-paragraph" lang="en">Marketing</p>
@@ -286,10 +346,25 @@
               </div>
             </li>
             <li class="team__item">
+              <picture>
+                <source 
+                srcset="./images/team/uides.jpg 1x,
+                            ./images/team/uides-2x.jpg 2x"
+                                 media="(min-width: 1200px)">
+                <source 
+                srcset="./images/team/uides-tab.jpg 1x,
+                           ./images/team/uides-tab-2x.jpg 2x" 
+                           media="(min-width: 768px)">
+              
+                <source 
+                srcset="./images/team/uides-mob.jpg 1x,
+                            ./images/team/uides-mob-2x.jpg 2x" 
+                            media="(min-width: 320px)">
               <img
                 src="./images/uides.jpg"
                 alt="фото Михаила Ермакова"
               />
+              </picture>
               <div class="team__under-text">
                 <h3 class="team__item-title">Михаил Ермаков</h3>
                 <p class="team__item-paragraph" lang="en">UI Designer</p>
@@ -379,8 +454,9 @@
       </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
+        <div class="footer__tab">
         <div class="footer-first-block">
           <a class="link footer__logo logo" href="/index.html"
             >Web<span class="logo--light">Studio</span></a
@@ -442,6 +518,7 @@
             </li>
           </ul>
         </div>
+        </div>
         <div class="footer__subscribe subscribe">
           <p class="subscribe__title">Подпишитесь на рассылку</p>
           <form action="#" class="subscribe__form">
@@ -460,7 +537,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close button" data-modal-close>
@@ -538,4 +615,4 @@
     </div>
     <script src="./js/modal.js"></script>
   </body>
-</html> -->
+</html>

@@ -1,12 +1,24 @@
 .portfolio-buttons {
-  display: block;
-  margin-right: 8px;
-  padding-top: -60px;
-  // display: flex;
-  // justify-content: center;
-  // & :not(:last-child) {
-  //   margin-right: 8px;
-  // }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  margin-top: -15px;
+  margin-bottom: 40px;
+  padding-top: 60px;
+  & :not(:last-child) {
+    margin-right: 8px;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    padding-top: 94px;
+  }
+}
+
+.portfolio-buttons__item {
+  margin-top: 15px;
 }
 
 .portfolio__btn {
@@ -45,19 +57,38 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+  }
 }
 
 .portfolio {
   padding-bottom: 60px;
-  // display: flex;
-  // flex-wrap: wrap;
-  // flex-basis: calc(100% / 3 - 30px);
-  // margin: 0;
-  // margin-left: calc(-1 * var(--portfolio-list-gap));
-  // margin-top: calc(-1 * var(--portfolio-list-gap));
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    padding-bottom: 94px;
+  }
 }
+// display: flex;
+// flex-wrap: wrap;
+// flex-basis: calc(100% / 3 - 30px);
+// margin: 0;
+// margin-left: calc(-1 * var(--portfolio-list-gap));
+// margin-top: calc(-1 * var(--portfolio-list-gap));
 .portfolio__link {
-  // display: block;
+  display: block;
 }
 
 .portfolio-bottom {
