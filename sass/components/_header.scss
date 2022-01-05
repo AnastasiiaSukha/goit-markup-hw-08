@@ -1,7 +1,15 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .header__container {
   display: flex;
@@ -11,11 +19,17 @@
   align-items: center;
 }
 .header__logo {
-  margin-right: 93px;
+  margin-right: 88px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .header__list {
-  display: flex;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .header__item:not(:last-child) {
   margin-right: 50px;
@@ -41,8 +55,11 @@
     border-radius: 2px;
     position: absolute;
     display: block;
-    bottom: -34px;
+    bottom: -40px;
     left: 0;
+    @media screen and (min-width: 1200px) {
+      bottom: -34px;
+    }
   }
 }
 .active,
@@ -50,17 +67,33 @@
   color: var(--accent-color);
 }
 .header__contacts {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
 }
 .contacts__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
 }
+
 .mail__icon,
 .tell__icon {
   fill: currentColor;
-  margin-right: 10px;
+  margin-right: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
 }
 .contacts__mail {
   display: flex;

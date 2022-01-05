@@ -21,13 +21,12 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="header-navigation">
           <a class="link header__logo logo" href="./index.html"
             >Web<span class="logo--dark">Studio</span></a
           >
-
           <ul class="list header__list">
             <li class="header__item">
               <a class="link header__link active" href="./index.html">
@@ -62,8 +61,67 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="mob-menu__open button">
+          <svg class="menu-open__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mob-menu-open"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      
+      <div class=" mob-menu is-hidden">
+        <div class="container">
+        <div class="mob-menu__top">
+        <button type="button" class="mob-menu__close button">
+          <svg class="mob-menu__icon-close" width="18.67" height="18.67">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+<ul class="list mob-menu__list">
+  <li class="mob-menu__item">
+    <a class="link mob-menu__link" href="./index.html">
+      Студия
+    </a>
+  </li>
+  <li class="mob-menu__item">
+    <a class="link mob-menu__link" href="./portfolio.html">
+      Портфолио</a>
+  </li>
+  <li class="mob-menu__item">
+    <a class="link mob-menu__link" href="">Контакты</a>
+  </li>
+</ul>
+</div>
+<div class="mob-menu__bottom">
+<ul class="list mob-menu__contacts">
+  <li class="mob-menu__contacts-item">
+    <a class="mob-menu__contacts-tel tel link" href="tel:+380961111111">
+      +38 096 111 11 11
+    </a>
+  </li>
+  <li class="mob-menu__contacts-item">
+    <a class="mob-menu__contacts-mail mail link" href="mailto:info@devstudio.com">
+      info@devstudio.com
+    </a>
+  </li>
+</ul>
+<ul class="mob-menu__social-list list">
+  <li class="mob-menu__social-item">
+    <a class="link mob-menu__social-link" href="">Instagram</a>
+  </li>
+  <li class="mob-menu__social-item">
+    <a class="link mob-menu__social-link" href="">Twitter</a>
+  </li>
+  <li class="mob-menu__social-item">
+    <a class="link mob-menu__social-link" href="">Facebook</a>
+  </li>
+  <li class="mob-menu__social-item">
+    <a class="link mob-menu__social-link" href="">LinkedIn</a>
+  </li>
+</ul>
+</div>
+</div>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -614,5 +672,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
